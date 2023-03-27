@@ -1,6 +1,66 @@
+*,
+*:before,
+*:after {
+  /* box-sizing: border-box; */
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article>*+* {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  padding: 0;
+  font: inherit;
+}
+
+/* ---------------------------- */
+
+
+
 *{
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 body{
@@ -33,14 +93,14 @@ body{
 .nav-link{
     text-decoration: none;
     color:white;
-    
+
 }
 
 .nav-li a{
     display: inline-block;
     font-size: 2rem;
     padding: 1rem 2rem;
-    
+
 }
 
 .nav-link:hover{
@@ -62,9 +122,9 @@ body{
     animation-duration: 1s;
     position: relative;
     animation-delay: 1s;
-} 
+}
 @keyframes hey{
-    0%{ 
+    0%{
         top:0;
     }
     50%{
@@ -80,8 +140,8 @@ body{
 
 
 h1{
-  color: white;  
-  font-weight: 700; 
+  color: white;
+  font-weight: 700;
   font-size: 6rem;
   margin: 0;
   padding: 0;
@@ -95,7 +155,21 @@ h1{
     margin: 0;
     padding: 0;
 }
-.project-section{
+
+.welcome-section > .about{
+    color: white;
+    font-size: 28px;
+    max-width: 50%;
+    margin-top:20px;
+}
+
+
+
+
+
+
+/* project-section */
+/* .project-section{
     background-color: #142a72;
     animation-name: hey;
     animation-duration: 1s;
@@ -104,17 +178,7 @@ h1{
     padding: 3rem;
 }
 
-@keyframes hey{
-    0%{ 
-        top:0;
-    }
-    50%{
-        top: -100vh;
-    }
-    100%{
-        top:0;
-    }
-}
+
 
 
 .project-tile{
@@ -127,23 +191,23 @@ h1{
     text-align: center;
     border-bottom: 2px solid white;
     color:white;
-}
+} */
 
 
 
 /*сетка*/
-.project-tile{
+/* .project-tile{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px 30px;
-    
-    
+
+
 }
 
-.project-img{   
+.project-img{
     max-width: 100%;
     height: auto;
-    
+
 }
 
 .link-project-tile{
@@ -158,7 +222,7 @@ h1{
 .project-p{
     font-size: 20px;
     padding: 1rem ;
-    
+
     color:white;
 }
 span{
@@ -166,7 +230,7 @@ span{
 }
 
 .project-p:hover + span {
-    opacity: 1; 
+    opacity: 1;
 }
 
 
@@ -174,7 +238,7 @@ span{
     opacity: 1;
     color: #ff7f50;
 }
- 
+
 .show{
     text-align: center;
 }
@@ -182,7 +246,7 @@ span{
 .link-show{
     color:white;
     text-decoration: none;
-    
+
     background-color: #332d2d;
     font-style: italic;
     padding: 10px 30px;
@@ -192,7 +256,7 @@ span{
 .link-show:hover{
 background-color:firebrick;
 transition: 500ms;
-}
+} */
 
 .contact{
     background-color: #332d2d;
@@ -215,7 +279,7 @@ transition: 500ms;
 .contact-link{
     padding-top: 2rem;
     padding-bottom: 10rem;
-    
+
 }
 
 .link-contact{
@@ -228,13 +292,13 @@ transition: 500ms;
 
 .link-contact:hover{
     transform: translateY(10px);
-    
+
 }
 .contact-code:hover{
     color:brown;
 }
 
-   
+
 footer{
     background-color: #332d2d;
     padding: 2rem;
@@ -245,8 +309,8 @@ footer > p{
     display: inline;
     margin: 2rem;
     color:white;
-    
-    
+
+
 }
 
 .link-footer{
@@ -258,8 +322,8 @@ footer > p{
     footer{
        display: flex;
        justify-content: space-between;
-    }  
-    
+    }
+
 }
 
 
@@ -269,10 +333,10 @@ footer > p{
     }
   }
 
-  
+
 @media only screen and  (max-width: 780px ) {
     .nav-li a{
         font-size: 1rem;
     }
-    
+
 }
