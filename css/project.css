@@ -1,0 +1,105 @@
+.project-section {
+  background-color: #142a72;
+  animation-name: hey;
+  animation-duration: 1s;
+  position: relative;
+  animation-delay: 1s;
+  padding: 6rem;
+}
+
+.project-tile {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.projects-header {
+  text-align: center;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.wrapper_project {
+    /* max-width: 90%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.work_description {
+    flex: 0 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.block_img{
+    flex: 1 0 50%;
+}
+.work_img {
+    display: flex;
+    /* flex: 0 1 50%; */
+    max-width: auto;
+}
+
+/*сетка*/
+/* .project-tile{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px 30px;
+
+
+} */
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.link-project-tile {
+  text-decoration: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-color: #332d2d;
+  border-radius: 2%;
+}
+
+.project-p {
+  font-size: 20px;
+  padding: 1rem;
+
+  color: white;
+}
+span {
+  opacity: 0;
+}
+
+.project-p:hover + span {
+  opacity: 1;
+}
+
+.project-img:hover + .project-p span {
+  opacity: 1;
+  color: #ff7f50;
+}
+
+.show {
+  text-align: center;
+}
+
+.link-show {
+  color: white;
+  text-decoration: none;
+
+  background-color: #332d2d;
+  font-style: italic;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.link-show:hover {
+  background-color: firebrick;
+  transition: 500ms;
+}

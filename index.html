@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/project.css">
 
     <title>Personal portfolio</title>
 </head>
@@ -12,22 +14,85 @@
     <nav class="navbar" id="navbar">
         <ul class="nav-ul">
         <li class="nav-li"><a class="nav-link" href="#welcome-section">About</a></li>
+        <li class="nav-li"><a class="nav-link" href="#skills-section">Skills</a></li>
         <li class="nav-li"><a class="nav-link" href="#projects">Work</a></li>
         <li class="nav-li"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
     </nav>
     <section id="welcome-section" class="welcome-section" >
         <h1>Hey I am Pasha</h1>
-        <p>a web developer</p>
+        <p>a front-end developer</p>
+        <p class="about">Every day I strive to learn something new or consolidate existing knowledge. I get great pleasure that I manage to realize my plans after many trials and errors. I follow the principle: Paying attention to the little things, the result will be better.</p>
+    </section>
+    <section id="skills-section" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>SCSS</li>
+            <li>
+                Styled-components</li>
+                <li>
+                    Tailwind</li>
+                    <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>
+                Hooks</li>
+            <li>
+                React Native</li>
+            <li>
+                Chrome Developer Tools</li>
+            <li>Axios</li>
+            <li>
+                Redux.js</li>
+            <li>
+                Redux.ts</li>
+            <li>
+                Heroku</li>
+            <li>
+                Responsive Web Design</li>
+            <li>
+                JSON</li>
+            <li>
+                Webpack</li>
+            <li>
+                Git</li>
+            <li>
+                GitHub</li>
+                <li>Formik</li>
+                <li>Yup</li>
+                <li>React-mask</li>
+                <li>React-swiper</li>
+                <li>React-router</li>
+                <li>Npm</li>
+                <li>Yarn</li>
+                <li>...</li>
+
+        </ul>
     </section>
     <section id="projects" class="project-section">
         <h2 class="projects-header">These are some of my projects</h2>
         <div class="project-tile">
 
-            <a class="link-project-tile"   href="https://pavel-loban.github.io/norman.githab.io/" target="_blank">
-                <img class="project-img" src="img/Norman.png" alt="project">
-                <p class="project-p"><span class="code"> &lt; </span> Tribute Page <span class="code">/></span></p>
-            </a>
+            <div class="wrapper_project" >
+                <p class="work_description">work_description</p>
+                <div class="block_img">
+                    <a class="link-project-tile"   href="https://pavel-loban.github.io/norman.githab.io/" target="_blank">
+                    <img class="work_img" src="img/Norman.png" alt="project">
+                </a>
+                </div>
+
+            </div>
+            <!-- <div> -->
+                <!-- <p>stjsrtjdtyk</p> -->
+                <a class="link-project-tile"   href="https://pavel-loban.github.io/norman.githab.io/" target="_blank">
+                    <img class="project-img" src="img/Norman.png" alt="project">
+                    <p class="project-p"><span class="code"> &lt; </span> Tribute Page <span class="code">/></span></p>
+                </a>
+
+            <!-- </div> -->
+
 
             <a class="link-project-tile" href="https://pavel-loban.github.io/form/" target="_blank">
                 <img class="project-img" src="img/form.png" alt="project">
@@ -43,7 +108,7 @@
                 <p class="project-p"><span class="code">&lt;</span> Tehnical Documentation Page <span class="code">/></span></p>
             </a>
 
-          <a class="link-project-tile" href="https://pavel-loban.github.io/profile/" target="_blank">
+          <a class="link-project-tile" href="https://pavel-loban.github.io/portfolio/" target="_blank">
                 <img class="project-img" src="img/portfolio.png" alt="project">
                 <p class="project-p"><span class="code">&lt;</span> Personal Portfolio <span class="code">/></span></p>
             </a>
