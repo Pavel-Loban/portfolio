@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/certificates.css">
 
     <title>Personal portfolio</title>
 </head>
@@ -20,12 +22,12 @@
         </ul>
     </nav>
     <section id="welcome-section" class="welcome-section" >
-        <h1>Hey I am Pasha</h1>
-        <p>a front-end developer</p>
+        <h1  class="welcome-title" >Hey I am Pasha</h1>
+        <p  class="welcome-subtitle">a front-end developer</p>
         <p class="about">Every day I strive to learn something new or consolidate existing knowledge. I get great pleasure that I manage to realize my plans after many trials and errors. I follow the principle: Paying attention to the little things, the result will be better.</p>
     </section>
     <section id="skills-section" class="skills">
-        <h2>Skills</h2>
+        <h2 class="skills-title">Skills</h2>
         <ul>
             <li>HTML5</li>
             <li>CSS</li>
@@ -75,23 +77,81 @@
         <h2 class="projects-header">These are some of my projects</h2>
         <div class="project-tile">
 
-            <div class="wrapper_project" >
+
+
+            <!-- <div class="wrapper_project" >
                 <p class="work_description">work_description</p>
                 <div class="block_img">
-                    <a class="link-project-tile"   href="https://pavel-loban.github.io/norman.githab.io/" target="_blank">
+                    <a class="link-img"   href="https://pavel-loban.github.io/norman.githab.io/" target="_blank">
+                    <img class="work_img" src="img/footbol.jpg" alt="project">
+                </a>
+                </div>
+
+            </div> -->
+
+            <div class="wrapper_project" >
+                <p class="work_description"> Participation in the training from the company Clevertec. Code verification. Passing e2e tests.The site "Library" for booking a book.
+                    Implemented registration, user authorization, filtering books by category and rating, book search, book booking.
+                    Technologies used in the project:  React, TypeScript, SCSS, Redux.ts(createAsyncThunk), Hooks, React-swiper, React-mask, Axios, React-router, Outlet, Formik, Yup,Yarn, Responsive Design, JSON, localStorage(JWT).
+                </p>
+                <div class="block_img">
+                    <a class="link-img"   href="https://youtu.be/d4-vkftu9JY" target="_blank">
+                    <img class="work_img" src="img/Library.png" alt="project">
+                </a>
+                </div>
+
+            </div>
+
+
+            <div class="wrapper_project" >
+                <p class="work_description">Vegetarian food store: user registration, form validation, adding, deleting and editing the quantity of goods, searching, sorting, calculating the cost of goods, logout. Implemented a slider by product category.
+                    Technologies used in the project: HTML5,MaterialUI, SCSS, React.js, Redux.js, Axios, React-router, Formik, Yup, Firebase, localStorage.
+                </p>
+                <div class="block_img">
+                    <a class="link-img"   href="https://pavel-loban.github.io/vegetPage" target="_blank">
+                    <img class="work_img" src="img/Ishop.png" alt="project">
+                </a>
+                </div>
+            </div>
+
+
+            <div class="wrapper_project" >
+                <p class="work_description">Description: The toy store includes 4 pages. Adaptive layout, burger menu.
+                    <!-- Adaptive layout, burger menu. Main page: description and contacts of the organization.
+
+                    Catalog page: all products, sorting products by cost and alphabetically, search by product name, selecting the quantity of goods and adding to the cart, scrolling to the top of the page, pop-up modal help window, data is saved in localstorage.
+
+                    Product page: product description, product reviews, product images, image magnification (parallax effect)
+
+                    Cart page: displays selected items, item quantity change, item deletion, checkout, form validation and submission. -->
+                    Technologies used in the project: HTML5, CSS, JavaScript, WebPack, NodeJS, PostgreSQL, Ajax, OOP, JSON, localStorage.
+                </p>
+                <div class="block_img">
+                    <a class="link-img"   href="https://pavel-loban.github.io/Toys/index.html" target="_blank">
+                    <img class="work_img" src="img/Magic-kingdom.png" alt="project">
+                </a>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="wrapper_project" >
+                <p class="work_description">Technologies used: HTML, CSS.</p>
+                <div class="block_img">
+                    <a class="link-img"   href="https://pavel-loban.github.io/norman.githab.io/" target="_blank">
                     <img class="work_img" src="img/Norman.png" alt="project">
                 </a>
                 </div>
 
             </div>
-            <!-- <div> -->
-                <!-- <p>stjsrtjdtyk</p> -->
-                <a class="link-project-tile"   href="https://pavel-loban.github.io/norman.githab.io/" target="_blank">
+                <!-- <a class="link-project-tile"   href="https://pavel-loban.github.io/norman.githab.io/" target="_blank">
                     <img class="project-img" src="img/Norman.png" alt="project">
                     <p class="project-p"><span class="code"> &lt; </span> Tribute Page <span class="code">/></span></p>
                 </a>
 
-            <!-- </div> -->
 
 
             <a class="link-project-tile" href="https://pavel-loban.github.io/form/" target="_blank">
@@ -111,7 +171,7 @@
           <a class="link-project-tile" href="https://pavel-loban.github.io/portfolio/" target="_blank">
                 <img class="project-img" src="img/portfolio.png" alt="project">
                 <p class="project-p"><span class="code">&lt;</span> Personal Portfolio <span class="code">/></span></p>
-            </a>
+            </a> -->
 
         </div>
           <div class="show">
@@ -120,22 +180,55 @@
 
     </section>
 
+    <section class="certificate">
+        <h2 class="certificate-header">Certificates</h2>
+
+
+        <div class="certificates_wrapper">
+
+
+        <div class="certificate_item">
+            <a href="https://goo.su/Tumw0Fl"  target="_blank">
+            <img class="item_certificate" src="img/certificate-react.jpg" alt="certificate React" />
+        </a>
+            <p class="item_lable"> </p>
+        </div>
+
+        <div class="certificate_item">
+            <a href="http://surl.li/cnhaj "  target="_blank">
+            <img class="item_certificate" src="img/certificate-javaScript.jpg" alt="certificate javaScript" />
+        </a>
+            <p class="item_lable"> </p>
+        </div>
+
+        <div class="certificate_item">
+            <a href="https://www.freecodecamp.org/certification/fcc278a5877-086c-417f-8823-fa3e290cb621/responsive-web-design"  target="_blank">
+            <img class="item_certificate" src="img/responsive-web-design.png" alt="certificate responsive" />
+        </a>
+            <p class="item_lable"> </p>
+        </div>
+
+    </div>
+    </section>
+
     <section id="contact" class="contact">
         <div class="contact-header">
            <h2>Let's work together...</h2>
            <p>How do you take your coffee?</p>
         </div>
         <div class="contact-link">
-            <a class="link-contact" href="#" target="_blank">Facebook</a>
-            <a class="link-contact" href="#" target="_blank">GitHub</a>
-            <a class="link-contact" href="#" target="_blank">Twitter</a>
-            <a class="link-contact" href="#" target="_blank"><code class="contact-code">@</code>Send a mail</a>
-            <a class="link-contact" href="#" target="_blank">Coll me</a>
+            <a class="link-contact" href="https://www.facebook.com/loban.pasha/" target="_blank">Facebook</a>
+            <a class="link-contact" href="https://github.com/Pavel-Loban" target="_blank">GitHub</a>
+            <a class="link-contact" href="https://www.linkedin.com/in/pavel-loban-b30356235/" target="_blank">Linkedin</a>
+            <!-- <a class="link-contact" href="#" target="_blank"><code class="contact-code">@</code>Send a mail</a>
+            <a class="link-contact" href="#" target="_blank">Coll me</a> -->
         </div>
+        <p class="contact_text">@</code>Send a mail: loban_pasha@mail.ru</p>
+        <p class="contact_text">Coll me: +375 (29) 503-51-60</p>
     </section>
   <footer>
-      <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
-      <p>&copy; Created for <a  class="link-footer" href="https://www.freecodecamp.org/" target="_blank" > freeCodeCamp </a></p>
+      <!-- <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+      <p>&copy; Created for <a  class="link-footer" href="https://www.freecodecamp.org/" target="_blank" > freeCodeCamp </a></p> -->
   </footer>
 </body>
 

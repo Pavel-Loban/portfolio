@@ -8,10 +8,11 @@
     padding:70px 0;
 }
 
-.skills > h2 {
+.skills-title {
     color:white;
     text-align: center;
     margin-bottom: 70px;
+    font-size: 40px;
 }
 
 .skills > ul {
@@ -35,6 +36,8 @@
     margin-right: 20px;
     cursor: pointer;
     transition: all 0.5s ease;
+    font-size: 25px;
+    text-align: center;
 }
 
 .skills > ul > li:hover {
