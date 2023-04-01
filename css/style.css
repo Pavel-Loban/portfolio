@@ -1,7 +1,7 @@
 *,
 *:before,
 *:after {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 ul,
@@ -58,7 +58,7 @@ select {
 
 
 
-*{
+/* *{
     margin: 0;
     padding: 0;
 }
@@ -69,7 +69,7 @@ body{
     font-size: 1.8rem;
     margin: 0;
     padding: 0;
-}
+} */
 .navbar{
     display: flex;
     justify-content: flex-end;
@@ -87,7 +87,14 @@ body{
     display: flex;
     list-style: none;
     margin-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
+@media (max-width: 400px) {
+    .nav-ul {
+        flex-direction: column;
+    }
+  }
 
 
 .nav-link{
@@ -95,13 +102,24 @@ body{
     color:white;
 
 }
+@media (max-width: 400px) {
+    .nav-li  {
+       padding: 10px;
+    }
+  }
+
 
 .nav-li a{
-    display: inline-block;
     font-size: 2rem;
     padding: 1rem 2rem;
 
 }
+
+@media (max-width: 400px) {
+    .nav-li a {
+        padding: 10px;
+    }
+  }
 
 .nav-link:hover{
     background: darkviolet;
@@ -139,15 +157,22 @@ body{
 
 
 
-h1{
+.welcome-title{
   color: white;
   font-weight: 700;
   font-size: 6rem;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
-.welcome-section > p {
+@media (max-width: 768px) {
+    .welcome-title {
+        font-size: 3rem;
+    }
+  }
+
+.welcome-subtitle {
     color:maroon;
     font-size: 3rem;
     font-weight:200;
@@ -156,109 +181,32 @@ h1{
     padding: 0;
 }
 
-.welcome-section > .about{
+@media (max-width: 768px) {
+    .welcome-subtitle {
+        font-size: 2rem;
+    }
+  }
+
+.about{
     color: white;
     font-size: 28px;
     max-width: 50%;
     margin-top:20px;
 }
 
+@media (max-width: 768px) {
+    .about {
+        max-width: 80%;
+    }
+  }
 
 
 
 
 
-/* project-section */
-/* .project-section{
-    background-color: #142a72;
-    animation-name: hey;
-    animation-duration: 1s;
-    position: relative;
-    animation-delay: 1s;
-    padding: 3rem;
-}
 
 
-
-
-.project-tile{
-    padding: 20px 20px;
-    text-align: center;
-
-}
-
-.projects-header{
-    text-align: center;
-    border-bottom: 2px solid white;
-    color:white;
-} */
-
-
-
-/*сетка*/
-/* .project-tile{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 20px 30px;
-
-
-}
-
-.project-img{
-    max-width: 100%;
-    height: auto;
-
-}
-
-.link-project-tile{
-    text-decoration: none;
-    display: block;
-    max-width: 100%;
-    height: auto;
-    background-color: #332d2d;
-    border-radius: 2%;
-}
-
-.project-p{
-    font-size: 20px;
-    padding: 1rem ;
-
-    color:white;
-}
-span{
-    opacity: 0;
-}
-
-.project-p:hover + span {
-    opacity: 1;
-}
-
-
-.project-img:hover + .project-p span{
-    opacity: 1;
-    color: #ff7f50;
-}
-
-.show{
-    text-align: center;
-}
-
-.link-show{
-    color:white;
-    text-decoration: none;
-
-    background-color: #332d2d;
-    font-style: italic;
-    padding: 10px 30px;
-    border-radius:5px;
-}
-
-.link-show:hover{
-background-color:firebrick;
-transition: 500ms;
-} */
-
-.contact{
+/* .contact{
     background-color: #332d2d;
     text-align: center;
     border-bottom: 5px solid #bd0707;
@@ -296,7 +244,7 @@ transition: 500ms;
 }
 .contact-code:hover{
     color:brown;
-}
+} */
 
 
 footer{
@@ -327,11 +275,11 @@ footer > p{
 }
 
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     body {
       background-color: lightblue;
     }
-  }
+  } */
 
 
 @media only screen and  (max-width: 780px ) {
@@ -340,3 +288,11 @@ footer > p{
     }
 
 }
+
+
+@media (max-width: 480px) {
+    footer {
+        flex-direction: column;
+    }
+  }
+
