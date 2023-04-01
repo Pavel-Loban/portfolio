@@ -104,7 +104,7 @@ body{
 }
 @media (max-width: 400px) {
     .nav-li  {
-       padding: 10px;
+       /* padding: 10px; */
     }
   }
 
@@ -118,7 +118,7 @@ body{
 @media (max-width: 400px) {
     .nav-li a {
         font-size: 12px;
-        padding: 10px;
+        padding: 17px;
     }
   }
 
