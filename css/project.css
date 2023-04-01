@@ -13,11 +13,7 @@
   }
 }
 
-@media (max-width: 400px) {
-  .project-section {
-    padding: 12rem 2rem;
-  }
-}
+
 
 .project-tile {
   padding: 20px 20px;
