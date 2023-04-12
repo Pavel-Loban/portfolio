@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="./img/p.png" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio Pavel Loban">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/project.css">
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/certificates.css">
 
-    <title>Personal portfolio</title>
+    <title>Pavel Loban - Front-end developer</title>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" >
         <ul class="nav-ul">
-        <li class="nav-li"><a class="nav-link" href="#welcome-section">About</a></li>
-        <li class="nav-li"><a class="nav-link" href="#skills-section">Skills</a></li>
-        <li class="nav-li"><a class="nav-link" href="#projects">Work</a></li>
+        <li class="nav-li"><a class="nav-link" href="#welcome">About</a></li>
+        <li class="nav-li"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-li"><a class="nav-link" href="#projects">Projects</a></li>
         <li class="nav-li"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <section id="welcome-section" class="welcome-section" >
-        <h1  class="welcome-title" >Hey I am Pasha</h1>
+    <section id="welcome" class="welcome-section" >
+        <h1  class="welcome-title" >Hey I am Pavel Loban</h1>
         <p  class="welcome-subtitle">a front-end developer</p>
-        <p class="about">Every day I strive to learn something new or consolidate existing knowledge. I get great pleasure that I manage to realize my plans after many trials and errors. I follow the principle: Paying attention to the little things, the result will be better.</p>
+        <p class="about">Every day I strive to learn something new or consolidate existing knowledge and get the great pleasure of finding solutions even after many trials and errors. I believe that paying attention to the little things produces better results.</p>
     </section>
-    <section id="skills-section" class="skills">
+    <section id="skills" class="skills">
         <h2 class="skills-title">Skills</h2>
         <ul>
             <li>HTML5</li>
@@ -74,26 +76,23 @@
         </ul>
     </section>
     <section id="projects" class="project-section">
-        <h2 class="projects-header">These are some of my projects</h2>
+        <h2 class="projects-header">Projects</h2>
         <div class="project-tile">
 
 
 
-            <!-- <div class="wrapper_project" >
-                <p class="work_description">work_description</p>
-                <div class="block_img">
-                    <a class="link-img"   href="https://pavel-loban.github.io/norman.githab.io/" target="_blank">
-                    <img class="work_img" src="img/footbol.jpg" alt="project">
-                </a>
-                </div>
 
-            </div> -->
 
             <div class="wrapper_project" >
-                <p class="work_description"> Participation in the training from the company Clevertec. Code verification. Passing e2e tests.The site "Library" for booking a book.
-                    Implemented registration, user authorization, filtering books by category and rating, book search, book booking.
-                    Technologies used in the project:  React, TypeScript, SCSS, Redux.ts(createAsyncThunk), Hooks, React-swiper, React-mask, Axios, React-router, Outlet, Formik, Yup,Yarn, Responsive Design, JSON, localStorage(JWT).
-                </p>
+                <div class="work_about">
+                    <p class="work_title">"Library" for booking a book. Participation in the training from the company Clevertec:code verification, passing e2e tests.</p>
+                    <p class="work_description">
+                        Features: user registration, form validation, filtering books by category and rating, book search, book booking,adaptive layout, logout, burger menu.</br>
+                    Technologies used: React, TypeScript, SCSS, Redux.ts(createAsyncThunk), Hooks, React-swiper, React-mask, Axios, React-router, Outlet, Formik, Yup,Yarn, Responsive Design, JSON, localStorage(JWT).
+                    </p>
+
+                </div>
+
                 <div class="block_img">
                     <a class="link-img"   href="https://youtu.be/d4-vkftu9JY" target="_blank">
                     <img class="work_img" src="img/Library.png" alt="project">
@@ -104,9 +103,15 @@
 
 
             <div class="wrapper_project" >
-                <p class="work_description">Vegetarian food store: user registration, form validation, adding, deleting and editing the quantity of goods, searching, sorting, calculating the cost of goods, logout. Implemented a slider by product category.
-                    Technologies used in the project: HTML5,MaterialUI, SCSS, React.js, Redux.js, Axios, React-router, Formik, Yup, Firebase, localStorage.
+                <div class="work_about">
+                    <p class="work_title"> Vegetarian food store</p>
+                <p class="work_description">
+                    Features: user registration, form validation, adding, deleting and editing the quantity of goods, searching, sorting, calculating the cost of goods, logout, a slider by product category.</br>
+                    Technologies used:: HTML5,MaterialUI, SCSS, React.js, Redux.js, Axios, React-router, Formik, Yup, Firebase, localStorage.
                 </p>
+
+                </div>
+
                 <div class="block_img">
                     <a class="link-img"   href="https://pavel-loban.github.io/vegetPage" target="_blank">
                     <img class="work_img" src="img/Ishop.png" alt="project">
@@ -116,16 +121,13 @@
 
 
             <div class="wrapper_project" >
-                <p class="work_description">Description: The toy store includes 4 pages. Adaptive layout, burger menu.
-                    <!-- Adaptive layout, burger menu. Main page: description and contacts of the organization.
+                <div class="work_about">
+                    <p class="work_title"> Toy store</p>
+                    <p class="work_description">Features: adding, deleting and editing the quantity of goods, searching, sorting, calculating the cost of goods, adaptive layout, burger menu.</br>
+                        Technologies used in the project: HTML5, CSS, JavaScript, WebPack, NodeJS, PostgreSQL, Ajax, OOP, JSON, localStorage.
+                    </p>
+                </div>
 
-                    Catalog page: all products, sorting products by cost and alphabetically, search by product name, selecting the quantity of goods and adding to the cart, scrolling to the top of the page, pop-up modal help window, data is saved in localstorage.
-
-                    Product page: product description, product reviews, product images, image magnification (parallax effect)
-
-                    Cart page: displays selected items, item quantity change, item deletion, checkout, form validation and submission. -->
-                    Technologies used in the project: HTML5, CSS, JavaScript, WebPack, NodeJS, PostgreSQL, Ajax, OOP, JSON, localStorage.
-                </p>
                 <div class="block_img">
                     <a class="link-img"   href="https://pavel-loban.github.io/Toys/index.html" target="_blank">
                     <img class="work_img" src="img/Magic-kingdom.png" alt="project">
@@ -139,7 +141,13 @@
 
 
             <div class="wrapper_project" >
-                <p class="work_description">Technologies used: HTML, CSS.</p>
+                <div class="work_about">
+                    <p class="work_title">Dr. Norman Borlaug</p>
+                    <p class="work_description">
+                        Features: adaptive layout.</br>
+                        Technologies used: HTML, CSS.</p>
+                </div>
+
                 <div class="block_img">
                     <a class="link-img"   href="https://pavel-loban.github.io/norman.githab.io/" target="_blank">
                     <img class="work_img" src="img/Norman.png" alt="project">
@@ -147,35 +155,11 @@
                 </div>
 
             </div>
-                <!-- <a class="link-project-tile"   href="https://pavel-loban.github.io/norman.githab.io/" target="_blank">
-                    <img class="project-img" src="img/Norman.png" alt="project">
-                    <p class="project-p"><span class="code"> &lt; </span> Tribute Page <span class="code">/></span></p>
-                </a>
 
-
-
-            <a class="link-project-tile" href="https://pavel-loban.github.io/form/" target="_blank">
-                <img class="project-img" src="img/form.png" alt="project">
-                <p class="project-p"><span class="code">&lt; </span> Survey Form <span class="code">/></span></p>
-            </a>
-          <a class="link-project-tile" href="https://pavel-loban.github.io/site.github.io/" target="_blank">
-                <img class="project-img" src="img/product.png" alt="project">
-                <p class="project-p"><span class="code">&lt;</span> Product Landing Page <span class="code">/></span></p>
-            </a>
-
-          <a class="link-project-tile" href="https://pavel-loban.github.io/work/" target="_blank">
-                <img class="project-img" src="img/technical.png" alt="project">
-                <p class="project-p"><span class="code">&lt;</span> Tehnical Documentation Page <span class="code">/></span></p>
-            </a>
-
-          <a class="link-project-tile" href="https://pavel-loban.github.io/portfolio/" target="_blank">
-                <img class="project-img" src="img/portfolio.png" alt="project">
-                <p class="project-p"><span class="code">&lt;</span> Personal Portfolio <span class="code">/></span></p>
-            </a> -->
 
         </div>
           <div class="show">
-              <a href="https://github.com/Pavel-Loban" id="profile-link" class="link-show" target="_blank">Show all</a>
+              <a href="https://github.com/Pavel-Loban"  class="link-show" target="_blank">Show all</a>
           </div>
 
     </section>
@@ -214,22 +198,146 @@
     <section id="contact" class="contact">
         <div class="contact-header">
            <h2>Let's work together...</h2>
-           <p>How do you take your coffee?</p>
         </div>
         <div class="contact-link">
             <a class="link-contact" href="https://www.facebook.com/loban.pasha/" target="_blank">Facebook</a>
             <a class="link-contact" href="https://github.com/Pavel-Loban" target="_blank">GitHub</a>
             <a class="link-contact" href="https://www.linkedin.com/in/pavel-loban-b30356235/" target="_blank">Linkedin</a>
-            <!-- <a class="link-contact" href="#" target="_blank"><code class="contact-code">@</code>Send a mail</a>
-            <a class="link-contact" href="#" target="_blank">Coll me</a> -->
+
         </div>
         <p class="contact_text">@</code>Send a mail: loban_pasha@mail.ru</p>
-        <p class="contact_text">Coll me: +375 (29) 503-51-60</p>
+        <p class="contact_text">Call me: +375 (29) 503-51-60</p>
     </section>
   <footer>
-      <!-- <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
-      <p>&copy; Created for <a  class="link-footer" href="https://www.freecodecamp.org/" target="_blank" > freeCodeCamp </a></p> -->
+
   </footer>
+  <script>
+
+
+
+//         t = document.querySelector(blockID).getBoundingClientRect().top,  // отступ от окна браузера до id
+//             start = null;
+//         requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
+//         function step(time) {
+//             if (start === null) start = time;
+//             var progress = time - start,
+//                 r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+//             window.scrollTo(0,r);
+//             if (r != w + t) {
+//                 requestAnimationFrame(step)
+//             } else {
+//                 location.hash = blockID  // URL с хэшем
+//             }
+//         }
+
+//   })
+// }
+
+
+
+//     const anchors = document.querySelectorAll('.nav-ul a[href^="#"]')
+
+//     console.log(anchors)
+
+// for (let anchor of anchors) {
+//   anchor.addEventListener('scroll', function (e) {
+
+//     console.log(anchor.offsetTop)
+
+//   const blockID = anchor.getAttribute('href')
+//   console.log(blockID)
+
+//   }, 1000)
+// }
+
+
+
+
+// window.addEventListener("scroll", (e) => {
+//   const scrollTop =
+//   window.pageYOffset
+// //   ||
+// // document.documentElement.scrollTop;
+// //   const elem = document.getElementById("skills");
+//   const elem = document.querySelectorAll("[id]");
+// //   console.log(elem)
+
+
+//     // let of = elem?.offsetTop + elem?.offsetHeight
+// //   console.log(scrollTop)
+// //   console.log('offsetTop', elem?.offsetTop, elem?.offsetHeight, of)
+
+// elem.forEach((el,index) => {
+//     // const pos = el.getBoundingClientRect();
+//     // console.log(pos.top, pos.bottom , index)
+//     // console.log(window.innerHeight)
+//     //     if (pos.top < window.innerHeight / 2 && pos.bottom > 0) {
+//     //       history.pushState(null, null, `#${el.id}`);
+//     //     } else {
+//     //        history.pushState(null, null, '');
+//     //     }
+
+
+//     let of = el?.offsetTop + el?.offsetHeight
+//     if (el?.offsetTop  <= scrollTop && scrollTop <= of) {
+
+//         history.pushState(null, null, `#${el.id}`);
+//             // document.location.hash = el.id;
+//             console.log(history)
+//   }
+//    else {
+//     history.pushState(null, null, '');
+//     console.log('else', history)
+//     // document.location.hash = '';
+//   }
+// })
+// });
+
+// const anchors = document.querySelectorAll('a[href*="#"]')
+
+// for (let anchor of anchors) {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault()
+
+//     const blockID = anchor.getAttribute('href').substr(1)
+
+//     // hash = this.href.replace(/[^#]*(.*)/, '$1');
+//     document.getElementById(blockID).scrollIntoView({
+//       behavior: 'smooth',
+//       block: 'start'
+//     })
+
+let linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
+    V = 0.2;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+// for (let i = 0; i < linkNav.length; i++)
+for(let link of linkNav)
+{
+
+    // let hash = `#${anchor.id}`
+    link.addEventListener('click', function(e) { //по клику на ссылку
+        e.preventDefault(); //отменяем стандартное поведение
+        let w = window.pageYOffset,  // производим прокрутка прокрутка
+            hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
+        console.log(hash)
+        t = document.querySelector(hash).getBoundingClientRect().top,  // отступ от окна браузера до id
+        console.log(t)
+            start = null;
+        requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
+        function step(time) {
+            if (start === null) start = time;
+            var progress = time - start,
+                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+            window.scrollTo(0,r);
+            if (r != w + t) {
+                requestAnimationFrame(step)
+            } else {
+                location.hash = hash  // URL с хэшем
+            }
+        }
+    }, false);
+}
+
+  </script>
 </body>
 
 </html>
