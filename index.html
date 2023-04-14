@@ -3,15 +3,10 @@
 <head>
     <link rel="shortcut icon" href="./img/p.png" type="image/png"/>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Pavel Loban">
     <meta name="description" content="Portfolio Pavel Loban. My skills: React, TypeScript, SCSS, Redux.ts(createAsyncThunk), Hooks, React-swiper, React-mask, Axios.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/project.css">
-    <link rel="stylesheet" href="css/contacts.css">
-    <link rel="stylesheet" href="css/certificates.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
     <title>Pavel Loban - Front-end developer</title>
 </head>
@@ -212,133 +207,7 @@
   <footer>
 
   </footer>
-  <script>
 
-
-
-//         t = document.querySelector(blockID).getBoundingClientRect().top,  // отступ от окна браузера до id
-//             start = null;
-//         requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
-//         function step(time) {
-//             if (start === null) start = time;
-//             var progress = time - start,
-//                 r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
-//             window.scrollTo(0,r);
-//             if (r != w + t) {
-//                 requestAnimationFrame(step)
-//             } else {
-//                 location.hash = blockID  // URL с хэшем
-//             }
-//         }
-
-//   })
-// }
-
-
-
-//     const anchors = document.querySelectorAll('.nav-ul a[href^="#"]')
-
-//     console.log(anchors)
-
-// for (let anchor of anchors) {
-//   anchor.addEventListener('scroll', function (e) {
-
-//     console.log(anchor.offsetTop)
-
-//   const blockID = anchor.getAttribute('href')
-//   console.log(blockID)
-
-//   }, 1000)
-// }
-
-
-
-
-// window.addEventListener("scroll", (e) => {
-//   const scrollTop =
-//   window.pageYOffset
-// //   ||
-// // document.documentElement.scrollTop;
-// //   const elem = document.getElementById("skills");
-//   const elem = document.querySelectorAll("[id]");
-// //   console.log(elem)
-
-
-//     // let of = elem?.offsetTop + elem?.offsetHeight
-// //   console.log(scrollTop)
-// //   console.log('offsetTop', elem?.offsetTop, elem?.offsetHeight, of)
-
-// elem.forEach((el,index) => {
-//     // const pos = el.getBoundingClientRect();
-//     // console.log(pos.top, pos.bottom , index)
-//     // console.log(window.innerHeight)
-//     //     if (pos.top < window.innerHeight / 2 && pos.bottom > 0) {
-//     //       history.pushState(null, null, `#${el.id}`);
-//     //     } else {
-//     //        history.pushState(null, null, '');
-//     //     }
-
-
-//     let of = el?.offsetTop + el?.offsetHeight
-//     if (el?.offsetTop  <= scrollTop && scrollTop <= of) {
-
-//         history.pushState(null, null, `#${el.id}`);
-//             // document.location.hash = el.id;
-//             console.log(history)
-//   }
-//    else {
-//     history.pushState(null, null, '');
-//     console.log('else', history)
-//     // document.location.hash = '';
-//   }
-// })
-// });
-
-// const anchors = document.querySelectorAll('a[href*="#"]')
-
-// for (let anchor of anchors) {
-//   anchor.addEventListener('click', function (e) {
-//     e.preventDefault()
-
-//     const blockID = anchor.getAttribute('href').substr(1)
-
-//     // hash = this.href.replace(/[^#]*(.*)/, '$1');
-//     document.getElementById(blockID).scrollIntoView({
-//       behavior: 'smooth',
-//       block: 'start'
-//     })
-
-let linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
-    V = 0.2;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
-// for (let i = 0; i < linkNav.length; i++)
-for(let link of linkNav)
-{
-
-    // let hash = `#${anchor.id}`
-    link.addEventListener('click', function(e) { //по клику на ссылку
-        e.preventDefault(); //отменяем стандартное поведение
-        let w = window.pageYOffset,  // производим прокрутка прокрутка
-            hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
-        console.log(hash)
-        t = document.querySelector(hash).getBoundingClientRect().top,  // отступ от окна браузера до id
-        console.log(t)
-            start = null;
-        requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
-        function step(time) {
-            if (start === null) start = time;
-            var progress = time - start,
-                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
-            window.scrollTo(0,r);
-            if (r != w + t) {
-                requestAnimationFrame(step)
-            } else {
-                location.hash = hash  // URL с хэшем
-            }
-        }
-    }, false);
-}
-
-  </script>
 </body>
 
 </html>
